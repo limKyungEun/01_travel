@@ -26,3 +26,5 @@
  var win;
  function winOpen(){
      win = window.open('contact.html', 'child', 'toolbar=no, location=no, status=no, menubar=no, resize=no, scrollbars=no, width=500, height=300')};
+
+     z

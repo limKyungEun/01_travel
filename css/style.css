@@ -1,11 +1,12 @@
 ﻿@charset "utf-8";
 @font-face {
-    font-family: 'SUITE-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 *{
+    font-family: 'Orbit-Regular';
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -34,7 +35,7 @@ header{height: 150px;}
     transition:all 0.4s;
     padding:5px 0;
 }
-.list>li:hover{background-color:#ddfff0; color:#696969}
+.list>li:hover{background-color:#004103; color:#fff;font-weight: 800;}
 
 .submenu{display:none; background-color:rgba(255,255,255,0.8); position: absolute; z-index:1; width:100%; margin-top:5px}
 .submenu>li{padding:5px 0;transition:all 0.4s;color:#000;background-color: #f0fff3;}
@@ -52,10 +53,11 @@ header{height: 150px;}
 .imgs>img{width:100%;height: 100%;position: absolute; transition: all 2s;object-fit: cover;}
 
 
-.minmenu{width: 800px;height: 100px;}
+.minmenu{width: 1000px;height: 80px;}
 .minmenu ul{width: 100%;height: 100%;display: flex;}
-.minmenu ul li{width: 100px;height: 100%;margin-top: 50px;font-weight: 900;text-align: center;}
-.minmenu ul li img{width: 100px;height: 100px;}
+.minmenu ul li{width: 80px;height: 100%;margin-top: 30px;font-weight: 900;text-align: center;padding: 20px;}
+.minmenu ul li img{width: 80px;height: 80px;}
+.minmenu ul li img:hover{transition:all 0.5s;transform: scale(1.1);}
 
 td>span{
     font-weight: 800;
@@ -71,17 +73,20 @@ td>span{
 .table tr td{
     width: 200px;
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
     margin-left: 20px;
 }
 .table tr td img{border-radius: 20px;margin-left: 40px;}
+.table tr td img:hover{transition:all 0.5s;transform: scale(1.3);}
 .rank{font-weight: 900;color: #00633d;font-size: 24px;}
 .rank span{font-weight: 900;font-size: 20px;color: #000;}
 .table tr>td:nth-child(3n){
-    border-left: 5px solid #d7eee4;
+    border-left: 5px solid #00633d;
 }
-.table tr:last-child{border-bottom: 5px solid #d7eee4;}
-.table tr:first-child{border-top: 5px solid #d7eee4;}
+.table tr:last-child{border-bottom: 5px solid #00633d;}
+.table tr:first-child{border-top: 5px solid #00633d;}
 
 .partner{
     width:480px;
