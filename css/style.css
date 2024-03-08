@@ -48,7 +48,12 @@ header{height: 150px;}
 .submenu>li:hover{background-color: #004103;color:#fff;font-weight: 900;}
 .list>li:hover .submenu{display: block; background-color: #cefae6;color: inherit}
 
-#imgslider{ margin-top: 10px; height:400px;}
+#imgslider{ 
+    position: absolute;
+    margin-top: 10px; 
+    height:400px;
+
+}
 .imgs{
     position:relative;
     overflow: hidden;
@@ -56,20 +61,29 @@ header{height: 150px;}
     width:  960px;
     background-color: #fff;
 }
-.imgs>img{width:100%;height: 100%;position: absolute; transition: all 2s;object-fit: cover;position: relative;}
+.imgs>img{
+    width:100%;
+    height: 100%;
+    transition: all 2s;
+    object-fit: cover;
+    position: relative;
+}
 .text{
     font-family: 'JalnanGothic';
     font-size: 50px;
-    color: #fff;
+    color: #000;
     position: relative;
-    left: 750px;
-    bottom: 330px;
+    bottom:2300px;
+    left: 50px;
     text-shadow: 5px 5px 4px rgb(82, 81, 81);
 
 }
 
 
-.minmenu{width: 1000px;height: 80px;}
+.minmenu{
+    width: 1000px;height: 80px;  
+    padding-top: 400px;
+}
 .minmenu ul{width: 100%;height: 100%;display: flex;}
 .minmenu ul li{width: 80px;height: 100%;margin-top: 30px;font-weight: 900;text-align: center;padding: 20px;}
 .minmenu ul li img{width: 80px;height: 80px;}
@@ -79,8 +93,8 @@ td>span{
     font-weight: 800;
 }
 
+#contents{margin-top: 150px;} 
 
-.recommend h2{margin-top: 250px}
 .table{
     border-collapse:collapse;
     margin-top: 50px; 
@@ -140,8 +154,14 @@ td>span{
     border-radius: 10px;
     font-size: 20px;
 }
-button{cursor:pointer;margin-top: 20px;}
-.imgbtn>button:hover{background-color:rgb(175, 252, 226);color: #000;}
+button{
+    cursor:pointer;
+    margin-top: 20px;
+}
+.imgbtn>button:hover{
+    background-color:rgb(175, 252, 226);
+    color: #000;
+}
 
 footer{
     height: 250px;
@@ -155,8 +175,15 @@ footer{
 footer.wrap{
     padding: 10px 20px;
 }
-footer ul{width: 50%; float:left}
-footer ul>li{float:left;margin-left:20px;margin-top:30px}
+footer ul{
+    width: 50%; 
+    float:left
+}
+footer ul>li{
+    float:left;
+    margin-left:20px;
+    margin-top:30px
+}
 footer p{
     width:50%;
     margin-top: 50px;
