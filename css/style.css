@@ -15,7 +15,7 @@ h1,h2,h3{color: #004b06;}
 a{color: inherit; text-decoration:none;}
 button{cursor: pointer;}
 body,html{min-width: 960px}
-.all{width:100%; float:left;}
+.all{width:100%; height: 200px;float:left;margin-top: 50px;}
 .wrap{width:960px;}
 .clear{clear:both; position:inherit;}
 header{height: 150px;}
@@ -34,11 +34,12 @@ header{height: 150px;}
     transition:all 0.4s;
     padding:5px 0;
 }
-.list>li:hover{background-color:#cefae6; color:#696969}
+.list>li:hover{background-color:#ddfff0; color:#696969}
 
 .submenu{display:none; background-color:rgba(255,255,255,0.8); position: absolute; z-index:1; width:100%; margin-top:5px}
-.submenu>li{padding:5px 0;transition:all 0.4s;color:#000}
-.submenu>li:hover{background-color: #cefae6;color: inherit}
+.submenu>li{padding:5px 0;transition:all 0.4s;color:#000;background-color: #f0fff3;}
+.submenu>li:hover{background-color: #004103;color:#fff;font-weight: 900;}
+.list>li:hover .submenu{display: block; background-color: #cefae6;color: inherit}
 
 #imgslider{ margin-top: 10px; height:400px;}
 .imgs{
@@ -48,23 +49,39 @@ header{height: 150px;}
     width:  960px;
     background-color: #000;
 }
-.imgs>img{width:100%;position: absolute; transition: all 2s}
+.imgs>img{width:100%;height: 100%;position: absolute; transition: all 2s;object-fit: cover;}
+
+
+.minmenu{width: 800px;height: 100px;}
+.minmenu ul{width: 100%;height: 100%;display: flex;}
+.minmenu ul li{width: 100px;height: 100%;margin-top: 50px;font-weight: 900;text-align: center;}
+.minmenu ul li img{width: 100px;height: 100px;}
 
 td>span{
     font-weight: 800;
 }
 
 
-.recommend h2{margin-top: 100px;}
-.table{border-collapse:collapse;margin-top: 50px; color:#666666;}
-.table tr td{padding: 5px;width: 200px;text-align: left;}
+.recommend h2{margin-top: 250px}
+.table{
+    border-collapse:collapse;
+    margin-top: 50px; 
+    color:#666666;
+}
+.table tr td{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+.table tr td img{border-radius: 20px;margin-left: 40px;}
 .rank{font-weight: 900;color: #00633d;font-size: 24px;}
 .rank span{font-weight: 900;font-size: 20px;color: #000;}
 .table tr>td:nth-child(3n){
-    border-left: 5px solid #d7eee4;;
-    padding-left: 50px;
+    border-left: 5px solid #d7eee4;
 }
-
+.table tr:last-child{border-bottom: 5px solid #d7eee4;}
+.table tr:first-child{border-top: 5px solid #d7eee4;}
 
 .partner{
     width:480px;
